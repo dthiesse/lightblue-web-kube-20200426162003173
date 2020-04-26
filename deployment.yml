@@ -4,6 +4,9 @@ metadata:
   name: webapp-lightblue-deployment
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: webapp
   template:
     metadata:
       name: pod-webapp
